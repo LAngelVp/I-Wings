@@ -1,0 +1,63 @@
+<div>
+    <div class="flex justify-center">
+        <input
+      type="text"
+      [(ngModel)]="filtroBusqueda"
+      (ngModelChange)="buscarProductos()"
+      placeholder="Buscar producto..."
+      class="w-full md:w-1/2 px-4 py-2 mb-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+    />
+    </div>
+    <div class="flex flex-wrap justify-center gap-4">
+      <button
+        (click)="mostrarProductos('burgers_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Hamburguesas
+      </button>
+      <button
+        (click)="mostrarProductos('papas_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Papas
+      </button>
+      <button
+        (click)="mostrarProductos('alitas_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Alitas
+      </button>
+      <button
+        (click)="mostrarProductos('guarniciones_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Guarniciones
+      </button>
+      <button
+        (click)="mostrarProductos('boneless_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Boneless
+      </button>
+      <button
+        (click)="mostrarProductos('hotdogs_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Hotdogs
+      </button>
+      <button
+        (click)="mostrarProductos('carnes_con_queso_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Carnes con queso
+      </button>
+      <button
+        (click)="mostrarProductos('matahambre_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Mata hambre
+      </button>
+    </div>
+  </div>
+  <app-burgers-product [productos]="productosMostrador"></app-burgers-product>
+  
