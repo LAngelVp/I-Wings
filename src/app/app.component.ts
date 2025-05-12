@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { LoadingComponent } from './components/loading/loading.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    LoadingComponent,
     RouterOutlet,
-    HomeComponent
+    HomeComponent,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
-export class AppComponent {
-  title = 'i-wings-menu';
+export class AppComponent{
+  
 }

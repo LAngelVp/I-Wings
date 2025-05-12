@@ -1,33 +1,47 @@
-import { Component } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { CarruselComponent } from '../../components/carrusel/carrusel.component';
 import { ButtonsCategoriesFoodComponent } from '../../components/buttons-categories-food/buttons-categories-food.component';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { LoadingComponent } from "../../components/loading/loading.component";
+import { LoadingServiceService } from '../../services/loading-service.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CarruselComponent,
-    ButtonsCategoriesFoodComponent
-  ],
+    ButtonsCategoriesFoodComponent,
+    LoadingComponent,
+    CommonModule
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.sass'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   icon_message = "assets/message.svg"
 
   logo_movil = 'assets/logo_humo.webp';
   logo_pantallas_lg = 'assets/header_logo_lg.webp';
   isMobile: boolean = false;
 
-  constructor() {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, public loadingService: LoadingServiceService) {}
 
   ngOnInit(): void {
     this.checkScreenSize();
-    window.addEventListener('resize', this.checkScreenSize.bind(this));
+    // Mostrar el loader al iniciar la carga
+    this.loadingService.show();
+
+    // Esperar a que la página esté completamente cargada
+    window.addEventListener('load', () => {
+      this.loadingService.hide(); // Ocultar el loader inmediatamente después de cargar
+    });
   }
 
-  checkScreenSize() {
-    this.isMobile = window.innerWidth <= 768; // Si el ancho de la pantalla es menor o igual a 768px
+  checkScreenSize(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const screenWidth = window.innerWidth;
+      console.log('Ancho de pantalla:', screenWidth);
+    }
   }
 
   mandar_mensaje(){
