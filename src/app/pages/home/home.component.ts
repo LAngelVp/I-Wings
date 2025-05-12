@@ -15,8 +15,8 @@ import { ButtonsCategoriesFoodComponent } from '../../components/buttons-categor
 export class HomeComponent {
   icon_message = "assets/message.svg"
 
-  logo_movil = 'assets/logo_humo_gris.svg';
-  logo_pantallas_lg = 'assets/header_logo_lg.svg';
+  logo_movil = 'assets/logo_humo.webp';
+  logo_pantallas_lg = 'assets/header_logo_lg.webp';
   isMobile: boolean = false;
 
   constructor() {}
