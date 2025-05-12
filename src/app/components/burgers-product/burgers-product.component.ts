@@ -12,8 +12,10 @@ export class BurgersProductComponent {
   @Input() productos: any[] = [];
   modalOpen: boolean = false;
   selectedProducto: any = null;
-
+  
+  
   openModal(producto: any) {
+    console.log(this.productos);
     this.selectedProducto = producto;
     this.modalOpen = true;
   }

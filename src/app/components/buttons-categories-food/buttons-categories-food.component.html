@@ -59,5 +59,14 @@
       </button>
     </div>
   </div>
-  <app-burgers-product [productos]="productosMostrador"></app-burgers-product>
+  <ng-container [ngSwitch]="categoriaActual">
+    <app-burgers-product *ngSwitchCase="'burgers_list'" [productos]="productosMostrador"></app-burgers-product>
+    <app-papas-component *ngSwitchCase="'papas_list'" [productos]="productosMostrador"></app-papas-component>
+    <app-alitas-component *ngSwitchCase="'alitas_list'" [productos]="productosMostrador"></app-alitas-component>
+    <app-guarniciones-component *ngSwitchCase="'guarniciones_list'" [productos]="productosMostrador"></app-guarniciones-component>
+    <app-boneless-component *ngSwitchCase="'boneless_list'" [productos]="productosMostrador"></app-boneless-component>
+    <app-hotdogs-component *ngSwitchCase="'hotdogs_list'" [productos]="productosMostrador"></app-hotdogs-component>
+    <app-carnes-con-queso-component *ngSwitchCase="'carnes_con_queso_list'" [productos]="productosMostrador"></app-carnes-con-queso-component>
+    <app-matahambre-component *ngSwitchCase="'matahambre_list'" [productos]="productosMostrador"></app-matahambre-component>
+  </ng-container>
   

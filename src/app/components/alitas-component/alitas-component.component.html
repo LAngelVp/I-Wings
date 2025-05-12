@@ -1,0 +1,50 @@
+<div
+  class="card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-4"
+>
+  <div
+    *ngFor="let producto of productos; let i = index"
+    class="producto-card bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out p-6 flex flex-col items-center text-center animate-fade-up animate-once animate-ease-out animate-duration-700"
+    [ngStyle]="{ 'animation-delay': (i * 100) + 'ms' }"
+  >
+    <img
+      [src]="producto.imagen"
+      alt="{{ producto.nombre }}"
+      class="w-48 h-48 object-cover rounded-full mb-4 cursor-pointer"
+      (click)="openModal(producto)"
+    />
+    <h3 class="text-xl font-semibold text-gray-800 mb-2">
+      {{ producto.nombre }}
+    </h3>
+    <p class="text-gray-600 mb-4">{{ producto.descripcion }}</p>
+    <div class="mt-2">
+        <ul>
+          <li *ngFor="let precio of producto.precios | keyvalue" class="text-sm md:text-lg font-bold text-orange-500">
+            {{ precio.key }} piezas: ${{ precio.value }}
+          </li>
+        </ul>
+      </div>
+    <button
+      class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out"
+      (click)="openModal(producto)"
+    >
+      Ver detalles
+    </button>
+  </div>
+</div>
+  
+  <div *ngIf="modalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    <div class="bg-white p-8 rounded-lg w-96 md:w-3/4 lg:w-3/4 relative">
+      <!-- Botón de cerrar con nuevo estilo -->
+      <button 
+        class="absolute top-4 right-4 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-xl font-semibold shadow-md hover:bg-red-600 focus:outline-none transition duration-300 ease-in-out"
+        (click)="closeModal()">
+        &times;
+      </button>
+      
+      <img [src]="selectedProducto.imagen" alt="{{selectedProducto.nombre}}" class="w-full h-72 md:h-72 object-cover mb-4 rounded-lg">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">{{ selectedProducto.nombre }}</h3>
+      <p class="text-lg text-gray-600 mb-4">{{ selectedProducto.descripcion }}</p>
+      
+    </div>
+  </div>
+  
