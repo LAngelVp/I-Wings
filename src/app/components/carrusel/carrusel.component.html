@@ -5,7 +5,7 @@
        style="width: 100%">
     <ng-container *ngFor="let promo of lista_promociones; let i = index">
       <div class="w-full shrink-0">
-        <img [src]="promo.img" class="w-full object-content h-96 md:rounded-t-xl" />
+        <img [src]="promo.img" class="w-full object-content h-80 md:rounded-t-xl" />
         <div class="p-4  mb-5 text-center">
           <h2 class="text-lg font-bold">{{ promo.Nombre }}</h2>
           <p class="text-sm text-gray-600">${{ promo.Costo }}</p>

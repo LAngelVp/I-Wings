@@ -43,11 +43,6 @@
       <p *ngIf="selectedProducto.costo" class="text-xl font-bold text-orange-500">Normal: {{ selectedProducto.costo | currency }}</p>
       <p *ngIf="selectedProducto.costo_papas" class="text-xl font-bold text-orange-500"> Con papas: {{ selectedProducto.costo_papas| currency }}</p>
       <p *ngIf="selectedProducto.suprema.costo " class="text-xl font-bold text-orange-500"> Suprema: {{ selectedProducto.suprema.costo | currency }}</p>
-      <div *ngIf="selectedProducto.presentaciones">
-        <p *ngFor="let presentacion of selectedProducto.presentaciones" class="text-xl font-bold text-orange-500">
-          {{ presentacion.nombre | titlecase }}: {{ presentacion.costo | currency }}
-        </p>
-      </div>
     </div>
   </div>
   

@@ -1,13 +1,18 @@
 <div>
-    <div class="flex justify-center">
-        <input
+  <div class="flex justify-center gap-2 items-center my-5">
+    <input
       type="text"
-      [(ngModel)]="filtroBusqueda"
-      (ngModelChange)="buscarProductos()"
+      [(ngModel)]="dato_a_buscar"
       placeholder="Buscar producto..."
-      class="w-full md:w-1/2 px-4 py-2 mb-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+      class="w-full md:w-1/2 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
     />
-    </div>
+    <button (click)="buscarProducto()" class="p-2 border-yellow-500 border-2 rounded hover:bg-yellow-400">Buscar</button>
+  </div>
+  <div class="p-4 text-center rounded-t-lg">
+    <h2 class=" text-yellow-700 text-2xl font-bold">
+      Menu Wings
+    </h2>
+</div>
     <div class="flex flex-wrap justify-center gap-4">
       <button
         (click)="mostrarProductos('burgers_list')"
@@ -60,13 +65,13 @@
     </div>
   </div>
   <ng-container [ngSwitch]="categoriaActual">
-    <app-burgers-product *ngSwitchCase="'burgers_list'" [productos]="productosMostrador"></app-burgers-product>
-    <app-papas-component *ngSwitchCase="'papas_list'" [productos]="productosMostrador"></app-papas-component>
-    <app-alitas-component *ngSwitchCase="'alitas_list'" [productos]="productosMostrador"></app-alitas-component>
-    <app-guarniciones-component *ngSwitchCase="'guarniciones_list'" [productos]="productosMostrador"></app-guarniciones-component>
-    <app-boneless-component *ngSwitchCase="'boneless_list'" [productos]="productosMostrador"></app-boneless-component>
-    <app-hotdogs-component *ngSwitchCase="'hotdogs_list'" [productos]="productosMostrador"></app-hotdogs-component>
-    <app-carnes-con-queso-component *ngSwitchCase="'carnes_con_queso_list'" [productos]="productosMostrador"></app-carnes-con-queso-component>
-    <app-matahambre-component *ngSwitchCase="'matahambre_list'" [productos]="productosMostrador"></app-matahambre-component>
+    <app-burgers-product *ngSwitchCase="'burgers_list'" [productos]="productos"></app-burgers-product>
+    <app-papas-component *ngSwitchCase="'papas_list'" [productos]="productos"></app-papas-component>
+    <app-alitas-component *ngSwitchCase="'alitas_list'" [productos]="productos"></app-alitas-component>
+    <app-guarniciones-component *ngSwitchCase="'guarniciones_list'" [productos]="productos"></app-guarniciones-component>
+    <app-boneless-component *ngSwitchCase="'boneless_list'" [productos]="productos"></app-boneless-component>
+    <app-hotdogs-component *ngSwitchCase="'hotdogs_list'" [productos]="productos"></app-hotdogs-component>
+    <app-carnes-con-queso-component *ngSwitchCase="'carnes_con_queso_list'" [productos]="productos"></app-carnes-con-queso-component>
+    <app-matahambre-component *ngSwitchCase="'matahambre_list'" [productos]="productos"></app-matahambre-component>
   </ng-container>
   
