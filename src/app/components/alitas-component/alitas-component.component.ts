@@ -1,11 +1,12 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-alitas-component',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    NgOptimizedImage
   ],
   templateUrl: './alitas-component.component.html',
   styleUrl: './alitas-component.component.sass'

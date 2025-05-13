@@ -1,19 +1,29 @@
 <div>
-  <div >
-    <app-loading class="flex absolute z-50 w-full h-lvh justify-center items-center color" *ngIf="loadingService.loading$ | async"></app-loading>
-  </div>
-    <div class="flex relative h-auto">
-      <img [src]="isMobile ? logo_movil : logo_pantallas_lg" alt="" class="block w-full h-lvh md:h-2/6 object-cover">
-      <div class="flex flex-col absolute top-0 left-0 right-0 w-full h-full justify-center">
-        <div class="mt-auto mb-24 md:mb-6 flex justify-center">
-          <button class="flex gap-2 btn_header px-4 py-2 rounded"
-          (click)="mandar_mensaje()">
+  <div class="flex relative h-auto">
+    
+    <!-- Imagen para pantallas pequeñas -->
+    <img [src]="logo_movil" alt="Logo móvil"
+         class="block md:hidden w-full h-lvh object-cover">
+
+    <!-- Imagen para pantallas medianas en adelante -->
+    <img [src]="logo_pantallas_lg" alt="Logo grande"
+         class="hidden md:block w-full h-lvh md:h-2/6 object-cover">
+
+    <!-- Capa superior con botón centrado -->
+    <div class="flex flex-col absolute top-0 left-0 right-0 w-full h-full justify-end">
+      <div class="flex gap-5 mb-14 md:mb-6 justify-center">
+        <button class="flex gap-2 btn_header px-4 py-2 rounded" (click)="mandar_mensaje()">
           <img [src]="icon_message" alt="">
-            Contacto
-          </button>
-        </div>
+          Contacto
+        </button>
+        <button class="flex gap-2 btn_header px-4 py-2 rounded" (click)="mostrar_ubicacion()">
+          <img [src]="icon_location" alt="">
+          Ubicacion
+        </button>
       </div>
     </div>
+  </div>
+
     <div class="my-10">
       <app-carrusel></app-carrusel>
     </div>

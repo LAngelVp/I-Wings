@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosInterface } from '../../models/productos-interface';
-import { BurgerProductsListComponent } from "../burger-products-list/burger-products-list.component";
 import { BurgersProductComponent } from "../burgers-product/burgers-product.component";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';

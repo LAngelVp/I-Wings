@@ -1,11 +1,12 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-matahambre-component',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    NgOptimizedImage
   ],
   templateUrl: './matahambre-component.component.html',
   styleUrl: './matahambre-component.component.sass'
