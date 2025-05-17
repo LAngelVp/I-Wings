@@ -17,12 +17,15 @@ import { NachosComponent } from '../nachos/nachos.component';
 import { PastasComponent } from '../pastas/pastas.component';
 import { QueTacosComponent } from '../que-tacos/que-tacos.component';
 import { TacosComponent } from '../tacos/tacos.component';
+import { SincronizadasComponent } from '../sincronizadas/sincronizadas.component';
+import { BebidasComponent } from "../bebidas/bebidas.component";
+import { MalteadasComponent } from '../malteadas/malteadas.component';
 
 @Component({
   selector: 'app-buttons-categories-food',
   standalone: true,
   imports: [
-    BurgersProductComponent, 
+    BurgersProductComponent,
     PapasComponentComponent,
     AlitasComponentComponent,
     GuarnicionesComponentComponent,
@@ -35,9 +38,13 @@ import { TacosComponent } from '../tacos/tacos.component';
     PastasComponent,
     QueTacosComponent,
     TacosComponent,
+    SincronizadasComponent,
+    BebidasComponentComponent,
+    MalteadasComponent,
     CommonModule,
-    FormsModule
-  ],
+    FormsModule,
+    BebidasComponent
+],
   templateUrl: './buttons-categories-food.component.html',
   styleUrl: './buttons-categories-food.component.sass'
 })

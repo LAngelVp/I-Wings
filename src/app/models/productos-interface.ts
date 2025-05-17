@@ -14,6 +14,9 @@ export interface ProductosInterface {
     sandwich_list: Sandwich[];
     tacos_list: Tacos[];
     quesos_fundidos_list: QuesosFundidos[];
+    sincronizadas_list: Sincronizadas[];
+    bebidas_list: Bebidas[];
+    malteadas_list: Malteadas[];
   }
   
   export interface Burger {
@@ -139,6 +142,27 @@ export interface ProductosInterface {
     imagen: string;
   }
     export interface QuesosFundidos{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+  export interface Sincronizadas{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+  export interface Bebidas{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    presentaciones: Presentacion[];
+    imagen: string;
+  }
+  export interface Malteadas{
     id:number;
     nombre: string;
     descripcion: string;

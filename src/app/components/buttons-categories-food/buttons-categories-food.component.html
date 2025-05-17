@@ -92,6 +92,24 @@
       >
         Tacos
       </button>
+      <button
+        (click)="mostrarProductos('sincronizadas_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Sincronizadas
+      </button>
+      <button
+        (click)="mostrarProductos('bebidas_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Bebidas
+      </button>
+      <button
+        (click)="mostrarProductos('malteadas_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Malteadas
+      </button>
     </div>
   </div>
   <ng-container [ngSwitch]="categoriaActual">
@@ -108,5 +126,8 @@
     <app-pastas *ngSwitchCase="'pastas_list'" [productos]="productos"></app-pastas>
     <app-que-tacos *ngSwitchCase="'quetacos_list'" [productos]="productos"></app-que-tacos>
     <app-tacos *ngSwitchCase="'tacos_list'" [productos]="productos"></app-tacos>
+    <app-sincronizadas *ngSwitchCase="'sincronizadas_list'" [productos]="productos"></app-sincronizadas>
+    <app-bebidas *ngSwitchCase="'bebidas_list'" [productos]="productos"></app-bebidas>
+    <app-malteadas *ngSwitchCase="'malteadas_list'" [productos]="productos"></app-malteadas>
   </ng-container>
   

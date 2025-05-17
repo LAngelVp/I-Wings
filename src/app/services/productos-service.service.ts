@@ -781,6 +781,108 @@ export class ProductosServiceService {
             costo: 90,
             imagen: "assets/LOGO/Logo_animado.jpeg"
           },
+        ],
+        sincronizadas_list: [
+          {
+            id: 1,
+            nombre: "Quesadilla",
+            descripcion: "Queso derretido con chorizo dorado y ligeramente crujiente. Una combinación intensa y sabrosa que conquista desde el primer bocado.",
+            costo: 18,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre: "Burrita",
+            descripcion: "Tortilla de harina suave, envuelve queso derretido y jamón ligeramente dorado. Es una opción sencilla y reconfortante, perfecta para un desayuno rápido o una cena ligera y sabrosa.",
+            costo: 22,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Burrita preparada",
+            descripcion: "Tortilla de harina rellena de carne, guacamole cremoso, pico de gallo fresco y queso. Es jugosa, con sabores intensos y textura balanceada entre lo crujiente, suave y picante.",
+            costo: 28,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+        ],
+        bebidas_list: [
+          {
+            id: 1,
+            nombre: "Refresco",
+            descripcion: "Tipos de refresco",
+            presentaciones: [
+              {nombre: "500 ml", costo: 25}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre: "Botella de agua",
+            descripcion: "Agua embotellada de 500 ml.",
+            presentaciones: [
+              {nombre: "500 ml", costo: 25}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Té helado",
+            descripcion: "Verde, azul y rojo",
+            presentaciones: [
+              {nombre: "500 mililitros", costo: 25},
+              {nombre: "1 litro", costo: 40},
+              {nombre: "Jarra 2 litros", costo: 75},
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 4,
+            nombre: "Horchata",
+            descripcion: "Bebida refrescante y cremosa hecha con arroz remojado, canela y azúcar. Se licúa, se cuela y se sirve fría. Tiene sabor dulce, aroma suave y una textura ligeramente sedosa.",
+            presentaciones: [
+              {nombre: "500 mililitros", costo: 25},
+              {nombre: "1 litro", costo: 40},
+              {nombre: "Jarra 2 litros", costo: 75},
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          }
+        ],
+        malteadas_list: [
+          {
+            id: 1,
+            nombre: "Fresa",
+            descripcion: "",
+            costo: 40,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre: "Vainilla",
+            descripcion: "",
+            costo: 40,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Chocolate",
+            descripcion: "",
+            costo: 40,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 4,
+            nombre: "Frappe Vainilla",
+            descripcion: "",
+            costo: 40,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 5,
+            nombre: "Frappe Moka",
+            descripcion: "",
+            costo: 40,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
         ]
       };
 
@@ -807,7 +909,10 @@ export class ProductosServiceService {
       ...this.productos.matahambre_list,
       ...this.productos.especialidades_list,
       ...this.productos.nachos_list,
-      ...this.productos.pastas_list
+      ...this.productos.pastas_list,
+      ...this.productos.sincronizadas_list,
+      ...this.productos.bebidas_list,
+      ...this.productos.malteadas_list,
     ];
 
     const resultado = todosLosProductos.filter(producto =>
