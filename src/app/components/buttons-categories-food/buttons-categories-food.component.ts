@@ -12,6 +12,11 @@ import { CarnesConQuesoComponentComponent } from '../carnes-con-queso-component/
 import { MatahambreComponentComponent } from '../matahambre-component/matahambre-component.component';
 import { BebidasComponentComponent } from '../bebidas-component/bebidas-component.component';
 import { ProductosServiceService } from '../../services/productos-service.service';
+import { EspecialidadesComponent } from '../especialidades/especialidades.component';
+import { NachosComponent } from '../nachos/nachos.component';
+import { PastasComponent } from '../pastas/pastas.component';
+import { QueTacosComponent } from '../que-tacos/que-tacos.component';
+import { TacosComponent } from '../tacos/tacos.component';
 
 @Component({
   selector: 'app-buttons-categories-food',
@@ -25,6 +30,11 @@ import { ProductosServiceService } from '../../services/productos-service.servic
     HotdogsComponentComponent,
     CarnesConQuesoComponentComponent,
     MatahambreComponentComponent,
+    EspecialidadesComponent,
+    NachosComponent,
+    PastasComponent,
+    QueTacosComponent,
+    TacosComponent,
     CommonModule,
     FormsModule
   ],

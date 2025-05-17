@@ -7,6 +7,13 @@ export interface ProductosInterface {
     hotdogs_list: Hotdogs[];
     carnes_con_queso_list: CarnesConQueso[];
     matahambre_list: MataHambre[];
+    especialidades_list: Especialidades[];
+    nachos_list: Nachos[];
+    pastas_list: Pastas[];
+    quetacos_list: QueTacos[];
+    sandwich_list: Sandwich[];
+    tacos_list: Tacos[];
+    quesos_fundidos_list: QuesosFundidos[];
   }
   
   export interface Burger {
@@ -32,7 +39,6 @@ export interface ProductosInterface {
     cantidad: number;
     imagen: string;
   }
-  
   export interface Presentacion {
     nombre: string;
     costo: number;
@@ -49,7 +55,6 @@ export interface ProductosInterface {
   export interface PreciosAlitas {
     [cantidad: number]: number;
   }
-  
   export interface Guarnicion {
     id: number;
     nombre: string;
@@ -86,6 +91,56 @@ export interface ProductosInterface {
   export interface MataHambre{
     id: number;
     nombre : string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+
+  export interface Especialidades{
+    id:number;
+    nombre:string;
+    descripcion: string;
+    presentaciones:Presentacion[]
+    imagen:string
+  }
+  export interface Nachos{
+    id: number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+  export interface Pastas{
+    id: number,
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+  export interface QueTacos{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+   export interface Sandwich{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+    export interface Tacos{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    presentaciones : Presentacion[];
+    imagen: string;
+  }
+    export interface QuesosFundidos{
+    id:number;
+    nombre: string;
     descripcion: string;
     costo: number;
     imagen: string;

@@ -529,6 +529,258 @@ export class ProductosServiceService {
             costo: 320,
             imagen: "assets/LOGO/Logo_animado.jpeg"
           }
+        ],
+        especialidades_list:[
+          {
+            id: 1,
+            nombre: "Gringa al pastor",
+            descripcion: "Rellena de carne de pastor en forma de sincronizada.",
+            presentaciones:[
+              {nombre: "Normal", costo: 85},
+              {nombre: "Con papas", costo: 100}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre: "Gringa de Bistec",
+            descripcion: "Rellena de carne de bistec en forma de sincronizada.",
+            presentaciones:[
+              {nombre: "Normal", costo: 95},
+              {nombre: "Con papas", costo: 110}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Burrito de pastor",
+            descripcion: "El burrito de pastor combina carne al pastor marinada, piña, cebolla y cilantro, todo envuelto en una suave tortilla de harina. Su sabor es una mezcla perfecta entre lo dulce, lo picante y lo ahumado. ¡Una delicia mexicana irresistible!",
+            presentaciones:[
+              {nombre: "Normal", costo: 90},
+              {nombre: "Con papas", costo: 105}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 4,
+            nombre: "Burrito de bistec",
+            descripcion: "El burrito de bistec está relleno con jugosos trozos de carne asada, acompañados de frijoles, arroz, cebolla y cilantro, todo envuelto en una tortilla de harina. Es una explosión de sabor tradicional y auténtico en cada bocado.",
+            presentaciones:[
+              {nombre: "Normal", costo: 100},
+              {nombre: "Con papas", costo: 115}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 5,
+            nombre: "Big taco de pastor",
+            descripcion: "El big taco de pastor ofrece una generosa porción de carne marinada al estilo tradicional, cocinada al trompo con piña. Se sirve en una tortilla grande de maíz, acompañado de cebolla, cilantro y salsa al gusto. ¡Sabor auténtico y contundente!",
+            presentaciones:[
+              {nombre: "Normal", costo: 90}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 6,
+            nombre: "Big taco de bictec",
+            descripcion: "El big taco de bistec es una explosión de sabor con jugosa carne de res asada al punto perfecto. Servido en una tortilla grande de maíz, acompañado de cebolla, cilantro y salsa, es ideal para los amantes de lo clásico.",
+            presentaciones:[
+              {nombre: "Normal", costo: 100}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 7,
+            nombre: "Mega burrito",
+            descripcion: "Una tortilla gigante rellena hasta el tope con carne a tu elección, arroz sazonado, frijoles refritos, queso derretido y guacamole casero. Todo envuelto y dorado a la plancha para lograr un exterior crujiente y un interior jugoso. Ideal para los de buen diente.",
+            presentaciones:[
+              {nombre: "Normal", costo: 170}
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+        ],
+        nachos_list: [
+          {
+            id: 1,
+            nombre: "Nachos de pastor",
+            descripcion: "Crujientes totopos cubiertos con jugosa carne al pastor, queso derretido, pico de gallo fresco y un toque de guacamole. Un antojo perfecto para compartir o disfrutar solo.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre: "Nachos de bistec",
+            descripcion: "Totopos dorados cubiertos con suculento bistec a la plancha, queso fundido, frijoles refritos, pico de gallo y jalapeños. Un clásico con sabor intenso y bien casero.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Nachos de chorizo",
+            descripcion: "Totopos calientes con chorizo doradito, queso derretido, frijoles, pico de gallo y crema. Un toque picante y sabroso que enciende el antojo en cada bocado.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+        ],
+        pastas_list: [
+          {
+            id: 1,
+            nombre : "Pasta boloñesa",
+            descripcion: "Espagueti al dente bañado en una rica salsa boloñesa hecha con carne molida, tomate, ajo y especias. Un platillo reconfortante, lleno de sabor y tradición italiana.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre : "Pasta alfredo",
+            descripcion: "Pasta suave bañada en una cremosa salsa Alfredo hecha con mantequilla, crema y queso parmesano. Suave, reconfortante y perfecta para los amantes de los sabores delicados y cremosos.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+        ],
+        quetacos_list: [
+          {
+            id: 1,
+            nombre: "Que taco (pastor)",
+            descripcion: "Tortilla de harina, guacamole y queso.",
+            costo: 90,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre: "Que taco (carne molida)",
+            descripcion: "Tortilla de harina, guacamole y queso.",
+            costo: 90,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Que taco (bistec)",
+            descripcion: "Tortilla de harina, guacamole y queso.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 4,
+            nombre: "Que taco (pollo)",
+            descripcion: "Tortilla de harina, guacamole y queso.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 5,
+            nombre: "Que taco (mix)",
+            descripcion: "Tortilla de harina, guacamole y queso.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+        ],
+        sandwich_list: [
+           {
+            id: 1,
+            nombre: "Sandwich sencillo",
+            descripcion: "Pan suave relleno con jamón, queso y un toque de mayonesa. Ideal para un antojo rápido, con sabor clásico y fresco que nunca falla.",
+            costo: 65,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+           {
+            id: 1,
+            nombre: "club jamon",
+            descripcion: "Tres niveles de pan tostado con jamón, queso, lechuga, jitomate y mayonesa. Un clásico lleno de sabor y textura en cada mordida.",
+            costo: 85,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+           {
+            id: 1,
+            nombre: "club chicken",
+            descripcion: "Delicioso pollo a la plancha con lechuga fresca, jitomate y mayonesa, servido en pan tostado tipo club. Ideal para una comida ligera pero satisfactoria.",
+            costo: 95,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+           {
+            id: 1,
+            nombre: "club beef (carne de res)",
+            descripcion: "Carne de res jugosa, acompañada de queso, vegetales frescos y mayonesa, entre rebanadas de pan tostado. Un sándwich robusto para los amantes de la carne.",
+            costo: 95,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+           {
+            id: 1,
+            nombre: "I wings sandwich",
+            descripcion: "Pollo crujiente con tiras de tocino y salsa BBQ, servido en pan suave. Dulce, ahumado y lleno de sabor, es uno de nuestros favoritos de la casa.",
+            costo: 100,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+        ],
+        tacos_list: [
+          {
+            id: 1,
+            nombre: "Tacos de pastor",
+            descripcion: "Tortilla suave con carne de cerdo marinada al estilo tradicional, asada al trompo y servida con piña, cebolla y cilantro. Un clásico irresistible lleno de sabor.",
+            presentaciones: [
+              {nombre : "Ord. 5 tacos", costo: 50},
+              {nombre : "Ord. 5 tacos c/queso", costo: 65},
+              {nombre : "Pieza", costo: 12},
+              {nombre : "Pieza c/queso", costo: 15},
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 2,
+            nombre: "Tacos de bistec",
+            descripcion: "Taco de res con carne jugosa y recién asada, acompañado de cebolla y cilantro sobre una tortilla caliente. Sencillo, sabroso y siempre cumplidor.",
+            presentaciones: [
+              {nombre : "Ord. 5 tacos", costo: 50},
+              {nombre : "Ord. 5 tacos c/queso", costo: 65},
+              {nombre : "Pieza", costo: 12},
+              {nombre : "Pieza c/queso", costo: 15},
+            ],
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+        ],
+        quesos_fundidos_list: [
+          {
+            id: 1,
+            nombre: "Choriqueso",
+            descripcion: "Queso derretido con chorizo dorado y ligeramente crujiente. Una combinación intensa y sabrosa que conquista desde el primer bocado.",
+            costo: 85,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 1,
+            nombre: "Pastor",
+            descripcion: "Carne de pastor marinada con especias, piña asada y queso fundido en perfecta armonía. Un giro delicioso al clásico.",
+            costo: 85,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 1,
+            nombre: "Bistec",
+            descripcion: "Trozos de carne de res jugosa sobre queso derretido, creando una mezcla rica y sustanciosa. Ideal para acompañar con tortillas.",
+            costo: 90,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 1,
+            nombre: "Tocino",
+            descripcion: "Tiras de tocino crujiente sobre queso caliente, combinando lo ahumado con lo cremoso para una explosión de sabor.",
+            costo: 85,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 1,
+            nombre: "Champiñones",
+            descripcion: "Champiñones salteados con ajo y especias sobre queso fundido, ideal para quienes buscan una opción más ligera sin perder sabor.",
+            costo: 85,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+          {
+            id: 1,
+            nombre: "Natural",
+            descripcion: "Solo queso derretido en su máxima expresión, suave, cremoso y listo para acompañar con lo que más te guste.",
+            costo: 90,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
         ]
       };
 
@@ -552,7 +804,10 @@ export class ProductosServiceService {
       ...this.productos.boneless_list,
       ...this.productos.hotdogs_list,
       ...this.productos.carnes_con_queso_list,
-      ...this.productos.matahambre_list
+      ...this.productos.matahambre_list,
+      ...this.productos.especialidades_list,
+      ...this.productos.nachos_list,
+      ...this.productos.pastas_list
     ];
 
     const resultado = todosLosProductos.filter(producto =>

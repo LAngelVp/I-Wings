@@ -13,7 +13,7 @@
       Menu Wings
     </h2>
 </div>
-    <div class="flex flex-wrap justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4 my-5">
       <button
         (click)="mostrarProductos('burgers_list')"
         class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
@@ -62,6 +62,36 @@
       >
         Mata hambre
       </button>
+      <button
+        (click)="mostrarProductos('especialidades_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Especialidades
+      </button>
+      <button
+        (click)="mostrarProductos('nachos_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Nachos
+      </button>
+      <button
+        (click)="mostrarProductos('pastas_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Pastas
+      </button>
+      <button
+        (click)="mostrarProductos('quetacos_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Que Tacos
+      </button>
+      <button
+        (click)="mostrarProductos('tacos_list')"
+        class="bg-orange-500 text-white px-4 py-2 rounded uppercase shadow-md hover:bg-orange-600 hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out"
+      >
+        Tacos
+      </button>
     </div>
   </div>
   <ng-container [ngSwitch]="categoriaActual">
@@ -73,5 +103,10 @@
     <app-hotdogs-component *ngSwitchCase="'hotdogs_list'" [productos]="productos"></app-hotdogs-component>
     <app-carnes-con-queso-component *ngSwitchCase="'carnes_con_queso_list'" [productos]="productos"></app-carnes-con-queso-component>
     <app-matahambre-component *ngSwitchCase="'matahambre_list'" [productos]="productos"></app-matahambre-component>
+    <app-especialidades *ngSwitchCase="'especialidades_list'" [productos]="productos"></app-especialidades>
+    <app-nachos *ngSwitchCase="'nachos_list'" [productos]="productos"></app-nachos>
+    <app-pastas *ngSwitchCase="'pastas_list'" [productos]="productos"></app-pastas>
+    <app-que-tacos *ngSwitchCase="'quetacos_list'" [productos]="productos"></app-que-tacos>
+    <app-tacos *ngSwitchCase="'tacos_list'" [productos]="productos"></app-tacos>
   </ng-container>
   

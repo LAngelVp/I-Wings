@@ -16,14 +16,13 @@
     />
   </div>
     <h3 class="text-xl font-semibold text-gray-800 mb-2">
-      {{ producto.nombre | uppercase }}
+      {{ producto.nombre | uppercase}}
     </h3>
     <p class="text-gray-600 mb-4">{{ producto.descripcion }}</p>
-    <div *ngIf="producto.porciones">
-      <p *ngFor="let porciones of producto.porciones" class="text-sm md:text-lg font-bold text-orange-500">
-        {{porciones.nombre | uppercase}} - {{ porciones.costo | currency }}
-      </p>
-    </div>
+    <p class="text-sm font-light text-gray-600 mb-4">{{ nota }}</p>
+    <p class="text-sm md:text-lg font-bold text-orange-500">
+      {{ producto.costo | currency }}
+    </p>
     <button
       class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out"
       (click)="openModal(producto)"
@@ -43,13 +42,8 @@
     </button>
     
     <img [src]="selectedProducto.imagen" alt="{{selectedProducto.nombre}}" class="w-full h-72 md:h-3/4 object-content mb-4 rounded-lg">
-      <h3 class="text-2xl font-semibold text-gray-800 mb-2">{{ selectedProducto.nombre | uppercase}}</h3>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">{{ selectedProducto.nombre }}</h3>
       <p class="text-lg text-gray-600 mb-4">{{ selectedProducto.descripcion }}</p>
-      <div *ngIf="selectedProducto.porciones">
-        <p *ngFor="let porciones of selectedProducto.porciones" class="text-sm md:text-lg font-bold text-orange-500">
-          {{porciones.nombre | uppercase}} - {{ porciones.costo | currency }}
-        </p>
-      </div>
+      <p *ngIf="selectedProducto.costo" class="text-xl font-bold text-orange-500">Costo: {{ selectedProducto.costo | currency }}</p>
     </div>
   </div>
-  
