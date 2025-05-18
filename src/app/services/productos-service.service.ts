@@ -212,7 +212,7 @@ export class ProductosServiceService {
             id: 1,
             nombre: "BBQ",
             descripcion: "Clásicas alitas bañadas en nuestra dulce y ahumada salsa BBQ, una opción que nunca falla.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -224,7 +224,7 @@ export class ProductosServiceService {
             id: 2,
             nombre: "BBQ Chipotle",
             descripcion: "La dulzura de la BBQ con el toque ahumado y picosito del chipotle, ¡una explosión de sabor!",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -236,7 +236,7 @@ export class ProductosServiceService {
             id: 3,
             nombre: "BBQ Habanero",
             descripcion: "Salsa BBQ con habanero para los amantes del picante con sabor intenso.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -248,7 +248,7 @@ export class ProductosServiceService {
             id: 4,
             nombre: "Búfalo",
             descripcion: "Alitas bañadas en nuestra clásica y picante salsa búfalo, ideales para paladares valientes.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -260,7 +260,7 @@ export class ProductosServiceService {
             id: 5,
             nombre: "Mango Habanero",
             descripcion: "Una deliciosa mezcla de dulzura tropical y picor intenso, ¡para los que buscan algo diferente!",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -272,7 +272,7 @@ export class ProductosServiceService {
             id: 6,
             nombre: "Teriyaki",
             descripcion: "Alitas bañadas en suave salsa teriyaki con un toque oriental dulce y salado.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -284,7 +284,7 @@ export class ProductosServiceService {
             id: 7,
             nombre: "BBQ Tamarindo",
             descripcion: "Una exótica combinación de salsa BBQ con tamarindo que mezcla dulzura y acidez.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -296,7 +296,7 @@ export class ProductosServiceService {
             id: 8,
             nombre: "Naranja Chipotle",
             descripcion: "Cítrica y ahumada, esta salsa combina naranja fresca con chipotle para un sabor único.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -308,7 +308,7 @@ export class ProductosServiceService {
             id: 9,
             nombre: "Mango Hot",
             descripcion: "Fusión tropical de mango dulce con chiles picantes, ¡una combinación atrevida y deliciosa!",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/ALITAS/alitas.svg",
             precios: {
               6: 75,
               12: 125,
@@ -322,7 +322,7 @@ export class ProductosServiceService {
             id: 1,
             nombre: "Guacamole",
             descripcion: "Cremoso y fresco, preparado al momento con aguacate, jitomate, cebolla y un toque de limón.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/GUARNICIONES/guacamole.svg",
             porciones: [
               { nombre: "chico", costo: 15 },
               { nombre: "grande", costo: 45 }
@@ -332,7 +332,7 @@ export class ProductosServiceService {
             id: 2,
             nombre: "Pico de gallo",
             descripcion: "Tradicional mezcla mexicana de jitomate, cebolla y chile fresco, ideal para acompañar cualquier platillo.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/GUARNICIONES/picogallo.svg",
             porciones: [
               { nombre: "porcion", costo: 15 }
             ]
@@ -341,7 +341,7 @@ export class ProductosServiceService {
             id: 3,
             nombre: "Mayonesa",
             descripcion: "Mayonesa cremosa servida en porción individual para complementar tus platillos favoritos.",
-            imagen: "assets/LOGO/Logo_animado.jpeg",
+            imagen: "assets/GUARNICIONES/mayonesa.svg",
             porciones: [
               { nombre: "porcion", costo: 15 }
             ]
@@ -441,7 +441,7 @@ export class ProductosServiceService {
             nombre: "taco salad",
             descripcion: "Crujiente tortilla rellena de carne, queso fundido, lechuga fresca y aderezo de la casa.",
             costo: 120,
-            imagen: "assets/LOGO/Logo_animado.jpeg"
+            imagen: "assets/CARNES_QUESO/carnes_queso_taco_salad.jpeg"
           },
           {
             id: 3,
@@ -455,7 +455,7 @@ export class ProductosServiceService {
             nombre: "pingüino",
             descripcion: "Especialidad de la casa: carne sazonada con doble queso gratinado en tortilla suave.",
             costo: 120,
-            imagen: "assets/LOGO/Logo_animado.jpeg"
+            imagen: "assets/CARNES_QUESO/carnes_queso_pinguino.jpeg"
           },
           {
             id: 5,
@@ -628,14 +628,14 @@ export class ProductosServiceService {
             nombre : "Pasta boloñesa",
             descripcion: "Espagueti al dente bañado en una rica salsa boloñesa hecha con carne molida, tomate, ajo y especias. Un platillo reconfortante, lleno de sabor y tradición italiana.",
             costo: 100,
-            imagen: "assets/LOGO/Logo_animado.jpeg"
+            imagen: "assets/PASTAS/BOLOÑESA.jpg"
           },
           {
             id: 2,
             nombre : "Pasta alfredo",
             descripcion: "Pasta suave bañada en una cremosa salsa Alfredo hecha con mantequilla, crema y queso parmesano. Suave, reconfortante y perfecta para los amantes de los sabores delicados y cremosos.",
             costo: 100,
-            imagen: "assets/LOGO/Logo_animado.jpeg"
+            imagen: "assets/PASTAS/ALFREDO.jpg"
           },
         ],
         quetacos_list: [
@@ -826,14 +826,36 @@ export class ProductosServiceService {
           },
           {
             id: 3,
-            nombre: "Té helado",
-            descripcion: "Verde, azul y rojo",
+            nombre: "Té helado (Italiano)",
+            descripcion: "",
             presentaciones: [
               {nombre: "500 mililitros", costo: 25},
               {nombre: "1 litro", costo: 40},
               {nombre: "Jarra 2 litros", costo: 75},
             ],
-            imagen: "assets/LOGO/Logo_animado.jpeg"
+            imagen: "assets/BEBIDAS/ITALIANA.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Té helado (verde)",
+            descripcion: "",
+            presentaciones: [
+              {nombre: "500 mililitros", costo: 25},
+              {nombre: "1 litro", costo: 40},
+              {nombre: "Jarra 2 litros", costo: 75},
+            ],
+            imagen: "assets/BEBIDAS/verde.jpeg"
+          },
+          {
+            id: 3,
+            nombre: "Té helado (frutos rojos)",
+            descripcion: "",
+            presentaciones: [
+              {nombre: "500 mililitros", costo: 25},
+              {nombre: "1 litro", costo: 40},
+              {nombre: "Jarra 2 litros", costo: 75},
+            ],
+            imagen: "assets/BEBIDAS/roja.jpeg"
           },
           {
             id: 4,
@@ -883,6 +905,68 @@ export class ProductosServiceService {
             costo: 40,
             imagen: "assets/LOGO/Logo_animado.jpeg"
           },
+        ],
+        cafes_list: [
+          {
+            id: 1,
+            nombre: "Lechero",
+            descripcion: "Espresso mezclado con abundante leche caliente. Cremoso, reconfortante y de sabor balanceado, ideal para acompañar tu desayuno o una charla relajada.",
+            costo: 30,
+            imagen: "assets/CAFES/lechero.svg"
+          },
+          {
+            id: 2,
+            nombre: "Americano",
+            descripcion: "Café suave y ligero preparado con espresso y agua caliente. Ideal para quienes disfrutan un sabor menos intenso, perfecto a cualquier hora del día.",
+            costo: 20,
+            imagen: "assets/CAFES/americano.svg"
+          },
+          {
+            id: 3,
+            nombre: "Capuchino",
+            descripcion: "Café con equilibrio entre espresso, leche caliente y espuma. Suave y aromático, con una textura cremosa que hace de cada sorbo una experiencia placentera.",
+            costo: 35,
+            imagen: "assets/CAFES/capuchino.svg"
+          },
+        ],
+        cervezas_list: [
+          {
+            id: 1,
+            nombre: "Corona",
+            descripcion: "Refrescante y ligera, con sabor suave y un toque cítrico. Ideal para disfrutar bien fría con una rodaja de limón en clima cálido.",
+            costo: 28,
+            imagen: "assets/CERVEZAS/corona.svg"
+          },
+          {
+            id: 2,
+            nombre: "Victoria",
+            descripcion: "Cerveza tipo Vienna con cuerpo medio y notas maltosas. Su sabor equilibrado la hace perfecta para acompañar comidas tradicionales mexicanas.",
+            costo: 28,
+            imagen: "assets/CERVEZAS/victoria.svg"
+          },
+          {
+            id: 3,
+            nombre: "Michelada",
+            descripcion: "Mezcla sabrosa de cerveza con limón, salsas, sal y especias. Refrescante y picante, ideal para quienes buscan algo diferente y con carácter. (Corona o Victoria)",
+            costo: 40,
+            imagen: "assets/CERVEZAS/michelada.svg"
+          },
+        ],
+        postres_list: [
+           {
+            id: 1,
+            nombre: "Smoked waffle",
+            descripcion: "Waffle suave y esponjoso, servido con una bola de helado cremoso y bañado en cajeta. Una combinación dulce, fresca y simplemente irresistible.",
+            costo: 60,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
+           {
+            id: 2,
+            nombre: "Helado",
+            descripcion: "Tres bolas de helado cremoso acompañadas de un toque de crema batida y un generoso baño de chocolate Hershey’s. Ideal para los amantes del postre.",
+            costo: 45,
+            imagen: "assets/LOGO/Logo_animado.jpeg"
+          },
         ]
       };
 
@@ -895,7 +979,7 @@ export class ProductosServiceService {
     return of(this.productosMostrador);
   }
 
-  buscar_producto(dato: string){
+  buscar_producto(dato: string): Observable<any[]>{
     const texto_buscado = dato.toLowerCase();
 
     const todosLosProductos = [
@@ -913,10 +997,14 @@ export class ProductosServiceService {
       ...this.productos.sincronizadas_list,
       ...this.productos.bebidas_list,
       ...this.productos.malteadas_list,
+      ...this.productos.cafes_list,
+      ...this.productos.cervezas_list,
+      ...this.productos.postres_list
     ];
 
     const resultado = todosLosProductos.filter(producto =>
-      producto.nombre.toLowerCase().includes(texto_buscado)
+      producto.nombre.toLowerCase().includes(texto_buscado) || 
+      producto.descripcion?.toLowerCase().includes(texto_buscado)
     );
     return of(resultado);
   }

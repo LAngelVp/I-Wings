@@ -10,7 +10,6 @@ import { BonelessComponentComponent } from '../boneless-component/boneless-compo
 import { HotdogsComponentComponent } from '../hotdogs-component/hotdogs-component.component';
 import { CarnesConQuesoComponentComponent } from '../carnes-con-queso-component/carnes-con-queso-component.component';
 import { MatahambreComponentComponent } from '../matahambre-component/matahambre-component.component';
-import { BebidasComponentComponent } from '../bebidas-component/bebidas-component.component';
 import { ProductosServiceService } from '../../services/productos-service.service';
 import { EspecialidadesComponent } from '../especialidades/especialidades.component';
 import { NachosComponent } from '../nachos/nachos.component';
@@ -20,6 +19,10 @@ import { TacosComponent } from '../tacos/tacos.component';
 import { SincronizadasComponent } from '../sincronizadas/sincronizadas.component';
 import { BebidasComponent } from "../bebidas/bebidas.component";
 import { MalteadasComponent } from '../malteadas/malteadas.component';
+import { CafesComponent } from '../cafes/cafes.component';
+import { CervezasComponent } from '../cervezas/cervezas.component';
+import { PostresComponent } from "../postres/postres.component";
+import { ProductosFiltradosComponent } from '../productos-filtrados/productos-filtrados.component';
 
 @Component({
   selector: 'app-buttons-categories-food',
@@ -39,11 +42,15 @@ import { MalteadasComponent } from '../malteadas/malteadas.component';
     QueTacosComponent,
     TacosComponent,
     SincronizadasComponent,
-    BebidasComponentComponent,
+    BebidasComponent,
     MalteadasComponent,
+    CafesComponent,
+    CervezasComponent,
+    ProductosFiltradosComponent,
     CommonModule,
     FormsModule,
-    BebidasComponent
+    BebidasComponent,
+    PostresComponent
 ],
   templateUrl: './buttons-categories-food.component.html',
   styleUrl: './buttons-categories-food.component.sass'
@@ -69,9 +76,7 @@ export class ButtonsCategoriesFoodComponent {
         this.productos = productos;
         console.log(this.productos)
       });
-    } else {
-      this.productos = [];
-    }
+    } 
   }
 }
 

@@ -17,6 +17,9 @@ export interface ProductosInterface {
     sincronizadas_list: Sincronizadas[];
     bebidas_list: Bebidas[];
     malteadas_list: Malteadas[];
+    cafes_list: Cafes[];
+    cervezas_list: Cervezas[];
+    postres_list: Postres[];
   }
   
   export interface Burger {
@@ -163,6 +166,27 @@ export interface ProductosInterface {
     imagen: string;
   }
   export interface Malteadas{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+  export interface Cafes{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+  export interface Cervezas{
+    id:number;
+    nombre: string;
+    descripcion: string;
+    costo: number;
+    imagen: string;
+  }
+  export interface Postres{
     id:number;
     nombre: string;
     descripcion: string;
