@@ -19,9 +19,25 @@
       {{ producto.nombre | uppercase}}
     </h3>
     <p class="text-gray-600 mb-4">{{ producto.descripcion }}</p>
-    <p class="text-sm md:text-lg font-bold text-orange-500">
-      {{ producto.costo | currency }}
-    </p>
+    <div *ngIf="producto.presentaciones">
+      <ul>
+        <li *ngFor="let presentacion of producto.presentaciones" class="text-sm md:text-lg font-bold text-orange-700">
+          {{ presentacion.nombre }} - {{ presentacion.costo | currency }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="producto.costo">
+      <p class="text-sm md:text-lg font-bold text-orange-500">
+        {{ producto.costo | currency }}
+      </p>
+    </div>
+    <div *ngIf="producto.precios">
+      <ul>
+        <li *ngFor="let precio of producto.precios | keyvalue" class="text-sm md:text-lg font-bold text-orange-500">
+          {{ precio.key }} piezas: ${{ precio.value }}
+        </li>
+      </ul>
+    </div>
     <button
       class="mt-4 bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out"
       (click)="openModal(producto)"
@@ -43,6 +59,27 @@
     <img [src]="selectedProducto.imagen" alt="{{selectedProducto.nombre}}" class="w-full h-72 md:h-96 object-content mb-4 rounded-lg">
       <h3 class="text-2xl font-semibold text-gray-800 mb-2">{{ selectedProducto.nombre }}</h3>
       <p class="text-lg text-gray-600 mb-4">{{ selectedProducto.descripcion }}</p>
-      <p *ngIf="selectedProducto.costo" class="text-xl font-bold text-orange-500">Costo: {{ selectedProducto.costo | currency }}</p>
+      <div *ngIf="selectedProducto.costo">
+      <p class="text-sm md:text-lg font-bold text-orange-500">
+        {{ selectedProducto.costo | currency }}
+      </p>
+    </div>
+    <div *ngIf="selectedProducto.precios">
+      <ul>
+        <li *ngFor="let precio of selectedProducto.precios | keyvalue" class="text-sm md:text-lg font-bold text-orange-500">
+          {{ precio.key }} piezas: ${{ precio.value }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="selectedProducto.costo_papas">
+      <p class="text-sm md:text-lg font-bold text-orange-500">
+        Con papas : {{ selectedProducto.costo | currency }}
+      </p>
+    </div>
+    <div *ngIf="selectedProducto.suprema">
+      <p class="text-sm md:text-lg font-bold text-orange-500">
+        Suprema : {{ selectedProducto.suprema.costo | currency }}
+      </p>
+    </div>
     </div>
   </div>

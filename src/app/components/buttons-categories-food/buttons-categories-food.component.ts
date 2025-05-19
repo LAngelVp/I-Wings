@@ -59,12 +59,14 @@ export class ButtonsCategoriesFoodComponent {
   dato_a_buscar: string = '';
   categoriaActual: string = '';
   productos: any[] = [];
+  productos_filtrados: any[] = [];
   
   constructor (private productosServicio: ProductosServiceService) {}
 
   mostrarProductos(categoria: keyof ProductosInterface): void {
     this.productosServicio.mostrarProductos(categoria).subscribe((productos) => {
       console.log('Productos de', categoria, productos);
+      this.productos_filtrados= [];
       this.productos = productos;
       this.categoriaActual = categoria;
     });
@@ -73,7 +75,7 @@ export class ButtonsCategoriesFoodComponent {
   buscarProducto(): void {
     if (this.dato_a_buscar.trim() !== '') {
       this.productosServicio.buscar_producto(this.dato_a_buscar).subscribe((productos) => {
-        this.productos = productos;
+        this.productos_filtrados = productos;
         console.log(this.productos)
       });
     } 
