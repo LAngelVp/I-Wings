@@ -8,7 +8,7 @@ import { Observable, of } from 'rxjs';
 export class ProductosServiceService {
   categoriaActual: string = '';
   productosMostrador: any[] = [];
-  productos : ProductosInterface = {
+  productos : ProductosInterface = { 
         burgers_list : [
           {
             id: 1,

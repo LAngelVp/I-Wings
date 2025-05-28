@@ -21,7 +21,7 @@
     </h3>
     <p class="text-gray-600 mb-4">{{ producto.descripcion }}</p>
     <div *ngIf="producto.presentaciones">
-      <p *ngFor="let presentacion of producto.presentaciones" class="text-sm md:text-md font-bold text-orange-500">
+      <p *ngFor="let presentacion of producto.presentaciones" class="text-sm md:text-lg font-bold text-orange-500">
         {{presentacion.nombre | uppercase}} - {{ presentacion.costo | currency }}
       </p>
     </div>
